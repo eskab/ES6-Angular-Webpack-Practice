@@ -1,0 +1,43 @@
+{
+  "name": "reddit-app",
+  "version": "1.0.0",
+  "description": "webpack & angular practice",
+  "main": "source/app/app.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eskab/reddit-app.git"
+  },
+  "keywords": [
+    "webpack",
+    "angular",
+    "reddit",
+    "api"
+  ],
+  "author": "Szymon Kabelis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eskab/reddit-app/issues"
+  },
+  "homepage": "https://github.com/eskab/reddit-app#readme",
+  "devDependencies": {
+    "angular": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "angular-ui-router": "^0.2.18",
+    "babel-core": "^6.7.7",
+    "babel-loader": "^6.2.4",
+    "bootstrap-less": "^3.3.8",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
+    "less": "^2.6.1",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
