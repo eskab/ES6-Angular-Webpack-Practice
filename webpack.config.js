@@ -10,8 +10,8 @@ module.exports = {
 	],
 	
 	output: {
-		path: root('dist'),
-		publicPath: '/',
+		path: path.resolve('dist'),
+		publicPath: 'http://localhost:8080/assets/',
 		filename: 'bundle.js'
 	},
 
@@ -28,39 +28,43 @@ module.exports = {
             {
                 test: /\.js$/, // include .js files
                 exclude: /node_modules/, // exclude any and all files in the node_modules folder
-                loader: 'jshint-loader'
+                loader: 'jshint'
             }
         ],
 		loaders: [
 			{
 				test: /\.css$/,
 				exclude: /node_modules/,
-				loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+				loader: ExtractTextPlugin.extract('style', 'css')
 				// loader: 'style-loader!css-loader'
 			},
 			{
 				test: /\.less$/,
 				exclude: /node_modules/,
-				loader: ExtractTextPlugin.extract('style-loader', 'css-loader!less-loader')
+				loader: ExtractTextPlugin.extract('style', 'css!less')
 				// loader: 'style-loader!css-loader!less-loader'
 			},
 			{
 				test: /\.html$/,
 				exclude: /node_modules/,
-				loader: 'html-loader'
+				loader: 'html'
 			},
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
-				loader: 'babel-loader'
+				loader: 'babel'
+			},
+			{
+				test: /\.(png|jpg)$/,
+				loader: 'url?limit=10000'
 			},
 			{
 				test: /\.(woff2|woff)$/,
-				loader: 'url-loader'
+				loader: 'url?limit=100000'
 			},
 			{
 				test: /\.(ttf|eot|svg)$/,
-				loader: 'file-loader'
+				loader: 'file'
 			}
 		]
 	},
@@ -74,8 +78,3 @@ module.exports = {
 	}
 
 };
-
-function root(args) {
-  	args = Array.prototype.slice.call(arguments, 0);
-  	return path.join.apply(path, [__dirname].concat(args));
-}
