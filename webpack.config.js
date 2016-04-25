@@ -24,6 +24,13 @@ module.exports = {
 	},
 
 	module: {
+		preLoaders: [
+            {
+                test: /\.js$/, // include .js files
+                exclude: /node_modules/, // exclude any and all files in the node_modules folder
+                loader: 'jshint-loader'
+            }
+        ],
 		loaders: [
 			{
 				test: /\.css$/,
@@ -60,11 +67,15 @@ module.exports = {
 
 	resolve: {
 		extensions: ['', '.css', 'less', '.html', '.js']
+	},
+
+	jshint: {
+		esversion: 6
 	}
 
 };
 
 function root(args) {
-  args = Array.prototype.slice.call(arguments, 0);
-  return path.join.apply(path, [__dirname].concat(args));
+  	args = Array.prototype.slice.call(arguments, 0);
+  	return path.join.apply(path, [__dirname].concat(args));
 }
