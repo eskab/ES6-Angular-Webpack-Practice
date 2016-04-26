@@ -8,7 +8,37 @@
     {
       "id": 2,
       "name": "Szymon",
-      "city": "Katowice-Giszowiec"
+      "city": "Poznań"
+    },
+    {
+      "id": 3,
+      "name": "Zenek",
+      "city": "Katowice"
+    },
+    {
+      "id": 4,
+      "name": "Szymon",
+      "city": "Rzeszów"
+    },
+    {
+      "id": 5,
+      "name": "Zenek",
+      "city": "Wrocław"
+    },
+    {
+      "id": 6,
+      "name": "Szymon",
+      "city": "Łódź"
+    },
+    {
+      "id": 7,
+      "name": "Zenek",
+      "city": "Szczecin"
+    },
+    {
+      "id": 8,
+      "name": "Szymon",
+      "city": "Radom"
     }
   ]
 }
