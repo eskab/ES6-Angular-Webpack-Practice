@@ -4,8 +4,9 @@ import angular from 'angular';
 import uirouter from 'angular-ui-router';
 
 import routing from './app.config';
-import test from './features/test';
+import users from './features/users';
+import userEdit from './features/userEdit';
 
-angular.module('app', [uirouter, test])
+angular.module('app', [uirouter, users, userEdit])
 	.config(routing);
 

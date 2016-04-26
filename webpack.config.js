@@ -26,8 +26,8 @@ module.exports = {
 	module: {
 		preLoaders: [
             {
-                test: /\.js$/, // include .js files
-                exclude: /node_modules/, // exclude any and all files in the node_modules folder
+                test: /\.js$/,
+                exclude: /node_modules/,
                 loader: 'jshint'
             }
         ],
@@ -36,13 +36,11 @@ module.exports = {
 				test: /\.css$/,
 				exclude: /node_modules/,
 				loader: ExtractTextPlugin.extract('style', 'css')
-				// loader: 'style-loader!css-loader'
 			},
 			{
 				test: /\.less$/,
 				exclude: /node_modules/,
 				loader: ExtractTextPlugin.extract('style', 'css!less')
-				// loader: 'style-loader!css-loader!less-loader'
 			},
 			{
 				test: /\.html$/,
