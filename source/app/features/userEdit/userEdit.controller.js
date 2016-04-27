@@ -13,10 +13,10 @@ export default class UserEditController {
 		let vm = this;
 
 		vm.user.$save(() => {})
-		.then((data) => {
+		.then(() => {
 			console.log('success');
 			vm.info = {value: 'User has been updated', class: 'bg-success'};
-		}, (err) => {
+		}, () => {
 			console.log('error');
 			vm.info = {value: 'An error has occured', class: 'bg-danger'};
 		});
