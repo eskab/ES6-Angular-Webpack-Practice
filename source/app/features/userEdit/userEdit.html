@@ -1,11 +1,30 @@
-<form>
-  <div class="form-group">
-    <label for="name">Name</label>
-    <input type="text" class="form-control" id="name" placeholder="Name" ng-model="vm.user.name">
-  </div>
-  <div class="form-group">
-    <label for="city">City</label>
-    <input type="text" class="form-control" id="city" placeholder="City" ng-model="vm.user.city">
-  </div>
-  <button type="submit" class="btn btn-default" ng-click="vm.submit()">Submit</button>
-</form>
+<div class="row">
+	<div class="col-xs-12">
+		<form class="form-horizontal" ng-submit="vm.submit()">
+		  <div class="form-group">
+		    <label for="name" class="col-sm-1 control-label">Name</label>
+		    <div class="col-sm-11">
+		    	<input type="text" class="form-control" id="name" placeholder="Name" ng-model="vm.user.name" required>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="email" class="col-sm-1 control-label">Email</label>
+		    <div class="col-sm-11">
+		    	<input type="email" class="form-control" id="email" placeholder="Email" ng-model="vm.user.email" required>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="city" class="col-sm-1 control-label">City</label>
+		    <div class="col-sm-11">
+		    	<input type="text" class="form-control" id="city" placeholder="City" ng-model="vm.user.city" required>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		  	<div class="col-sm-offset-1 col-sm-11">
+		  		<button type="submit" class="btn btn-default">Submit</button>
+		  	</div>
+		  </div>
+		</form>
+		<p ng-class="vm.info.class" ng-show="vm.info">{{vm.info.value}}</p>
+	</div>
+</div>

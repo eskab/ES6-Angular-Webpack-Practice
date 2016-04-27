@@ -1,5 +1,6 @@
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var autoprefixer = require('autoprefixer');
 
 module.exports = {
 
@@ -11,7 +12,7 @@ module.exports = {
 	
 	output: {
 		path: path.resolve('dist'),
-		publicPath: 'http://localhost:8080/assets/',
+		publicPath: '/assets',
 		filename: 'bundle.js'
 	},
 
@@ -40,7 +41,7 @@ module.exports = {
 			{
 				test: /\.less$/,
 				exclude: /node_modules/,
-				loader: ExtractTextPlugin.extract('style', 'css!less')
+				loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader!less-loader")
 			},
 			{
 				test: /\.html$/,
@@ -73,6 +74,10 @@ module.exports = {
 
 	jshint: {
 		esversion: 6
-	}
+	},
+
+	postcss: [ 
+		autoprefixer({ browsers: ['last 2 versions'] }) 
+	]
 
 };

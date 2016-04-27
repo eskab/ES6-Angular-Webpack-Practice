@@ -2,11 +2,9 @@ export default class UsersController {
 
 	constructor(usersResource) {
 
-		var vm = this;
+		let vm = this;
 
-		usersResource.query((data) => {
-			vm.users = data;
-		});
+		usersResource.query((data) => { vm.users = data; });
 
 	}
 

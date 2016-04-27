@@ -1,5 +1,49 @@
 @import '~bootstrap-less/bootstrap/index';
 
-body {
-	margin: 20px;
+@text-color: #212121;
+@link-color: #448AFF;
+
+html {
+	min-height: 100%;
+}
+
+.bg-success, .bg-danger {
+	padding: 15px;
+	margin: 10px 0;
+}
+
+.navbar-inverse {
+	
+	background-color: #303F9F;
+	border: 0;
+	border-radius: 0;
+
+	.navbar-header > .navbar-brand {
+		font-family: @font-family-monospace;
+		color: #fff;
+		background-color: #3F51B5;
+		cursor: default;
+	}
+
+	@media(min-width: @screen-sm) {
+		.navbar-nav {
+			float: right;
+		}
+	}
+
+	.navbar-nav > li > a {
+		color: #fff;
+		transition: all 0.3s linear;
+	}
+
+	.navbar-nav > li > a:hover {
+		background-color: #3F51B5;
+	}
+
+}
+
+.sticky-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }

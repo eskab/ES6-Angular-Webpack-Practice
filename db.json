@@ -2,42 +2,50 @@
   "users": [
     {
       "id": 1,
-      "name": "Zenek",
-      "city": "Warszawa"
+      "name": "new test user",
+      "email": "inny@mail.com",
+      "city": "new york city"
     },
     {
       "id": 2,
       "name": "Szymon",
+      "email": "new@old.pl",
       "city": "Poznań"
     },
     {
       "id": 3,
-      "name": "Zenek",
-      "city": "Katowice"
+      "name": "another fresh user",
+      "email": "new@old.pl",
+      "city": "user fresh another"
     },
     {
       "id": 4,
-      "name": "Szymon",
-      "city": "Rzeszów"
+      "name": "new another user",
+      "email": "new@old.pl",
+      "city": "user another"
     },
     {
       "id": 5,
-      "name": "Zenek",
+      "name": "Szymon",
+      "email": "new@old.pl",
       "city": "Wrocław"
     },
     {
       "id": 6,
       "name": "Szymon",
+      "email": "new@old.pl",
       "city": "Łódź"
     },
     {
       "id": 7,
-      "name": "Zenek",
+      "name": "Szymon",
+      "email": "new@old.pl",
       "city": "Szczecin"
     },
     {
       "id": 8,
       "name": "Szymon",
+      "email": "new@old.pl",
       "city": "Radom"
     }
   ]
