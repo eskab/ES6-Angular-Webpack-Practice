@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eskab/reddit-app.git"
+    "url": "git+https://github.com/eskab/ng-webpack-practice.git"
   },
   "keywords": [
     "webpack",
@@ -20,9 +20,9 @@
   "author": "Szymon Kabelis",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eskab/reddit-app/issues"
+    "url": "https://github.com/eskab/ng-webpack-practice/issues"
   },
-  "homepage": "https://github.com/eskab/reddit-app#readme",
+  "homepage": "https://github.com/eskab/ng-webpack-practice#readme",
   "devDependencies": {
     "angular": "^1.5.5",
     "angular-resource": "^1.5.5",
