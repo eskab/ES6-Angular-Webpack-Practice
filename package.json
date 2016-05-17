@@ -1,5 +1,5 @@
 {
-  "name": "reddit-app",
+  "name": "ES6-Angular-Webpack-Practice",
   "version": "1.0.0",
   "description": "webpack & angular practice",
   "main": "source/app/app.js",
@@ -9,20 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eskab/ng-webpack-practice.git"
+    "url": "https://github.com:eskab/ES6-Angular-Webpack-Practice.git"
   },
   "keywords": [
     "webpack",
     "angular",
-    "reddit",
+    "es6",
     "api"
   ],
   "author": "Szymon Kabelis",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eskab/ng-webpack-practice/issues"
+    "url": "https://github.com:eskab/ES6-Angular-Webpack-Practice/issues"
   },
-  "homepage": "https://github.com/eskab/ng-webpack-practice#readme",
+  "homepage": "https://github.com:eskab/ES6-Angular-Webpack-Practice#readme",
   "devDependencies": {
     "angular": "^1.5.5",
     "angular-resource": "^1.5.5",
